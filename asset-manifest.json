@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Sam-Mod23/s-modder-hughes.git/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/Sam-Mod23/s-modder-hughes.git/static/js/main.be6c62b6.chunk.js",
+    "main.js.map": "/Sam-Mod23/s-modder-hughes.git/static/js/main.be6c62b6.chunk.js.map",
+    "runtime-main.js": "/Sam-Mod23/s-modder-hughes.git/static/js/runtime-main.42cc7d61.js",
+    "runtime-main.js.map": "/Sam-Mod23/s-modder-hughes.git/static/js/runtime-main.42cc7d61.js.map",
+    "static/js/2.0ff4b23f.chunk.js": "/Sam-Mod23/s-modder-hughes.git/static/js/2.0ff4b23f.chunk.js",
+    "static/js/2.0ff4b23f.chunk.js.map": "/Sam-Mod23/s-modder-hughes.git/static/js/2.0ff4b23f.chunk.js.map",
+    "static/js/3.50e17162.chunk.js": "/Sam-Mod23/s-modder-hughes.git/static/js/3.50e17162.chunk.js",
+    "static/js/3.50e17162.chunk.js.map": "/Sam-Mod23/s-modder-hughes.git/static/js/3.50e17162.chunk.js.map",
+    "index.html": "/Sam-Mod23/s-modder-hughes.git/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/Sam-Mod23/s-modder-hughes.git/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.0ff4b23f.chunk.js.LICENSE.txt": "/Sam-Mod23/s-modder-hughes.git/static/js/2.0ff4b23f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Sam-Mod23/s-modder-hughes.git/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42cc7d61.js",
+    "static/js/2.0ff4b23f.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.be6c62b6.chunk.js"
+  ]
+}
