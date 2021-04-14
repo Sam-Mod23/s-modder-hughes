@@ -1,43 +1,127 @@
+@font-face {
+  font-family: raven;
+  src: url('./fonts/RavenouslyDemoRegular.ttf');
+}
+
+@font-face {
+  font-family: rustic;
+  src: url('./fonts/TheRustic-Demo.ttf');
+}
+
 .App {
   display: grid;
-  grid-template-rows: 100px auto;
+  grid-template-rows: 1fr 0.1fr auto;
   text-align: center;
-  background-color: #eae7dc;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #374550;
+  font-family: 'raven';
+  height: 100vh;
+}
+
+.break {
+  background-color: #90a2ab;
 }
 
 .App-header {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
   justify-content: space-between;
-  background-color: #d8c3a5;
-  color: #e85a4f;
+  background-color: #bcac85;
+  color: #8e3829;
   font-size: 280%;
-  font-style: italic;
   font-weight: bold;
+  padding: 5px;
 }
 
 .Body {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr;
   text-align: center;
-  background-color: #eae7dc;
-  padding: 20px;
+  padding: 5px;
   margin: 10px;
   color: #8e8d8a;
+  /* background-image: url('./images/Autumn.jpg');
+  background-size: 100%; */
 }
 
 .header {
   text-align: start;
 }
 
+.photo {
+  display: flex;
+  justify-self: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 150px;
+  object-fit: scale-down;
+  opacity: 1;
+  border: 4px #90a2ab solid;
+}
+
+.background {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  /* height: 150px; */
+  width: 800px;
+  object-fit: cover;
+  object-position: 50% 38%;
+}
+
+.socialLinks {
+  width: 30px;
+  height: 30px;
+  object-fit: scale-down;
+  margin: 5px;
+  filter: invert(23%) sepia(36%) saturate(2426%) hue-rotate(338deg)
+    brightness(94%) contrast(87%);
+}
+
 .aboutMe {
-  text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  font-family: 'raven';
+  font-size: medium;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 130%;
+  background-color: #f2f0f0;
+  color: #8e8d8a;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 .My-Work {
   text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .App {
+    display: grid;
+    grid-template-rows: 90px 10px auto;
+    height: 100vh;
+  }
+
+  .App-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Body {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto 5fr;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .aboutMe {
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    border-radius: 6px;
+    padding: 4px;
+  }
 }
