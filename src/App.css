@@ -1,19 +1,19 @@
 @font-face {
   font-family: raven;
-  src: url('./fonts/RavenouslyDemoRegular.ttf');
+  src: url("./fonts/RavenouslyDemoRegular.ttf");
 }
 
 @font-face {
   font-family: rustic;
-  src: url('./fonts/TheRustic-Demo.ttf');
+  src: url("./fonts/TheRustic-Demo.ttf");
 }
 
 .App {
   display: grid;
-  grid-template-rows: 1fr 0.1fr auto;
+  grid-template-rows: 1fr 10px auto;
   text-align: center;
   background-color: #374550;
-  font-family: 'raven';
+  font-family: "raven";
   height: 100vh;
 }
 
@@ -40,6 +40,7 @@
   padding: 5px;
   margin: 10px;
   color: #8e8d8a;
+  height: 150vh;
   /* background-image: url('./images/Autumn.jpg');
   background-size: 100%; */
 }
@@ -59,15 +60,6 @@
   border: 4px #90a2ab solid;
 }
 
-.background {
-  grid-column: 2/2;
-  grid-row: 1/1;
-  /* height: 150px; */
-  width: 800px;
-  object-fit: cover;
-  object-position: 50% 38%;
-}
-
 .socialLinks {
   width: 30px;
   height: 30px;
@@ -78,7 +70,7 @@
 }
 
 .aboutMe {
-  font-family: 'raven';
+  font-family: "raven";
   font-size: medium;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -97,7 +89,7 @@
   .App {
     display: grid;
     grid-template-rows: 90px 10px auto;
-    height: 100vh;
+    height: 90vh;
   }
 
   .App-header {
@@ -114,6 +106,7 @@
     text-align: center;
     padding: 5px;
     margin: 10px;
+    height: 100vh;
   }
 
   .aboutMe {
@@ -123,5 +116,15 @@
     grid-row-start: 2;
     border-radius: 6px;
     padding: 4px;
+  }
+
+  .background {
+    justify-self: stretch;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    height: 150px;
+
+    object-fit: cover;
+    object-position: 50% 38%;
   }
 }
