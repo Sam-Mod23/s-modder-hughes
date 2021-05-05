@@ -1,38 +1,32 @@
-import Scroll from "react-scroll";
-
 import "./App.css";
-import AboutMe from "./text/About-me.jsx";
+import AboutMe from "./components/About-me.jsx";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
-import Logo from "./images/Logo.png";
-
-const { Link } = Scroll;
+import Soundtrack from "./components/Soundtrack";
+import PhotoQuicklinks from "./components/Photo-quicklinks";
+import { Link } from "react-scroll";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <section className="photo-quicklinks">
-        <img className="photo" alt="Sam M-H" src={Logo}></img>
-        <div>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="work"
-          >
-            A look at my work...
-          </Link>
-
-          <Link href="#" className="soundtrack">
-            Something different...
-          </Link>
-        </div>
-      </section>
-      <AboutMe className="aboutMe" />
-
+      <PhotoQuicklinks />
+      <AboutMe />
       <Projects />
+      <Soundtrack />
+      <div>
+        {" "}
+        <Link
+          to="app-header"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="toTop"
+          style={{ color: "black" }}
+        >
+          Back to the top...
+        </Link>
+      </div>
     </div>
   );
 }
