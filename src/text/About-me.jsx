@@ -1,13 +1,15 @@
+import { Element } from "react-scroll";
+
 const AboutMe = () => {
   return (
-    <section className='aboutMe'>
+    <Element id="aboutMe" name="aboutMe" className="aboutMe">
       <body>
         <h2
           style={{
-            color: '#8E3829',
-            padding: '0px 0px',
-            margin: '4px 0px',
-            'text-align': 'left'
+            color: "#8E3829",
+            padding: "0px 0px",
+            margin: "4px 0px",
+            "text-align": "left"
           }}
         >
           About me
@@ -20,7 +22,7 @@ const AboutMe = () => {
           than Brian Cox would have you believe, upon graduation I stumbled into
           the banking sector. Having gained 7.5 years of experience, I had
           turned 30, the banking contract ended and I decided it was time to
-          expand my skill-set.{' '}
+          expand my skill-set.{" "}
         </p>
         <p>
           I’ve always been interested in tech and development from a user
@@ -28,14 +30,14 @@ const AboutMe = () => {
           has made the once elusive areas of tech. The fact that in week 4 we
           developed a (admittedly rudimentary) Pokemon game completely opened up
           my perspective on the whole industry.
-        </p>{' '}
+        </p>{" "}
         <p>
           In case it wasn’t already apparent, and completely against
           stereotype…I’m a training software developer who’s essentially just a
           big nerd - Star Wars, Marvel, Lego, Comic-Con, give me it all! I’m
           fascinated by the games industry, and love the way story telling is
           evoked through that medium. If only I had more time to play them!
-        </p>{' '}
+        </p>{" "}
         <p>
           I also couldn’t imagine my life without music, having basically been
           to a music festival every year of my life since I was 17. I had
@@ -45,7 +47,7 @@ const AboutMe = () => {
           wait for this to continue.
         </p>
       </body>
-    </section>
+    </Element>
   );
 };
 export default AboutMe;

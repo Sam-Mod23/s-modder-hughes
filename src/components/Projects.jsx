@@ -1,21 +1,20 @@
-import React from 'react';
-import Autumn from '../images/Autumn.jpg';
+import React from "react";
+import { Element } from "react-scroll";
 
 const Projects = () => {
   return (
-    <div>
-      {/* <img className='background' alt='autumn' src={Autumn}></img> */}
+    <Element id="projects" name="projects" className="projects">
       <header
         style={{
-          color: '#8E3829',
-          padding: '0px 0px',
-          margin: '4px 0px',
-          'text-align': 'center'
+          color: "#8E3829",
+          padding: "0px 0px",
+          margin: "4px 0px",
+          "text-align": "center"
         }}
       >
         Some of my work
       </header>
-    </div>
+    </Element>
   );
 };
 

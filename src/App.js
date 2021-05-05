@@ -1,8 +1,12 @@
+import Scroll from "react-scroll";
+
 import "./App.css";
 import AboutMe from "./text/About-me.jsx";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Logo from "./images/Logo.png";
+
+const { Link } = Scroll;
 
 function App() {
   return (
@@ -11,12 +15,19 @@ function App() {
       <section className="photo-quicklinks">
         <img className="photo" alt="Sam M-H" src={Logo}></img>
         <div>
-          <a href="" className="work" style={{ margin: "1rem" }}>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="work"
+          >
             A look at my work...
-          </a>
-          <a className="soundtrack" style={{ margin: "1rem" }}>
+          </Link>
+
+          <Link href="#" className="soundtrack">
             Something different...
-          </a>
+          </Link>
         </div>
       </section>
       <AboutMe className="aboutMe" />
