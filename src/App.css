@@ -1,3 +1,6 @@
+@import "./css/photo-quicklinks.css";
+@import "./css/projects.css";
+
 @font-face {
   font-family: raven;
   src: url("./fonts/RavenouslyDemoRegular.ttf");
@@ -8,21 +11,9 @@
   src: url("./fonts/TheRustic-Demo.ttf");
 }
 
-.socialLinks {
-  width: 40px;
-  height: 40px;
-  object-fit: scale-down;
-  margin: 5px;
-  padding: 0px;
-  /* filter: invert(37%) sepia(8%) saturate(7426%) hue-rotate(329deg)
-    brightness(84%) contrast(89%); */
-  filter: invert(92%) sepia(92%) saturate(41%) hue-rotate(206deg)
-    brightness(114%) contrast(92%);
-}
-
 .App {
   display: grid;
-  grid-template-rows: 0.8fr 1.5fr 4fr 4fr;
+  grid-template-rows: 0.8fr 1.5fr 4fr 4fr 4fr;
 }
 
 .App-header {
@@ -41,65 +32,32 @@
   padding: 10px;
 }
 
-.photo-quicklinks {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  background-color: #374550;
-  color: whitesmoke;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: raven;
-}
-
-.photo {
-  border-radius: 50%;
-  width: 104px;
-  height: 150px;
+.socialLinks {
+  width: 40px;
+  height: 40px;
   object-fit: scale-down;
-  opacity: 1;
-  border: 4px #90a2ab solid;
+  margin: 5px;
+  padding: 0px;
+  filter: invert(92%) sepia(92%) saturate(41%) hue-rotate(206deg)
+    brightness(114%) contrast(92%);
 }
 
-.work {
-  color: whitesmoke;
-  text-decoration: none;
-  padding: 5px;
-}
-.work:visited {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.work:active {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.work:hover {
-  font-style: italic;
+.toTop {
+  text-align: center;
+  color: #8e3829;
+  font-weight: bolder;
 }
 
-.soundtrack {
-  color: whitesmoke;
-  text-decoration: none;
-  padding: 5px;
-}
-.soundtrack:visited {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.soundtrack:active {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.soundtrack:hover {
-  font-style: italic;
+.toTop:hover {
+  cursor: pointer;
 }
 
+/* Desktop */
 @media only screen and (min-width: 720px) {
   .App {
-    grid-template-rows: 2.5fr 2fr 4fr 4fr;
+    grid-template-rows: 2.5fr 2fr 4fr 4fr 4fr;
   }
+  /* Header */
   .App-header {
     flex-direction: row;
     font-size: 450%;
@@ -107,29 +65,5 @@
   .socialLinks {
     width: 50px;
     height: 50px;
-  }
-  .photo-quicklinks {
-    flex-direction: row;
-    color: whitesmoke;
-    font-size: 20px;
-  }
-  .work {
-    padding: 3rem;
-    margin: 1rem;
-    height: 200px;
-  }
-  .work:hover {
-    color: #29180a;
-    background-size: cover;
-    background-image: url("https://images.pexels.com/photos/374016/pexels-photo-374016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  }
-  .soundtrack {
-    padding: 3rem;
-    margin: 1rem;
-    height: 200px;
-  }
-  .soundtrack:hover {
-    background-size: cover;
-    background-image: url("./images/Screenshot\ 2021-05-05\ at\ 13.45.40.png");
   }
 }
