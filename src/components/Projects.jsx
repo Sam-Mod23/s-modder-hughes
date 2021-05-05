@@ -1,5 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
+import news from "../images/nc-news.jpg";
 
 const Projects = () => {
   return (
@@ -14,6 +15,20 @@ const Projects = () => {
       >
         Some of my work
       </header>
+      <section className="project-collection">
+        <div
+          className="project-card"
+          style={{ backgroundImage: `url(${news})` }}
+        >
+          NC-News
+        </div>
+        <div
+          className="project-card"
+          style={{ backgroundImage: `url(${news})` }}
+        >
+          Blurble
+        </div>
+      </section>
     </Element>
   );
 };

@@ -4,7 +4,7 @@ import github from "../images/GitHub-Mark-64px.png";
 
 const Header = () => {
   return (
-    <header className="App-header">
+    <header id="app-header" className="App-header">
       Sam Modder-Hughes
       <div>
         <a href="https://www.linkedin.com/in/sam-modder-hughes/">

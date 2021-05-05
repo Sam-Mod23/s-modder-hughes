@@ -1,0 +1,24 @@
+.project-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.project-card {
+  flex-grow: 1;
+  color: whitesmoke;
+  height: 300px;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  background-image: url("../images/nc-news.jpg");
+  margin: 5px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 720px) {
+  .project-collection {
+    flex-direction: row;
+  }
+}
