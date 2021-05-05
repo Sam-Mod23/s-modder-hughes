@@ -1,127 +1,86 @@
 @font-face {
   font-family: raven;
-  src: url('./fonts/RavenouslyDemoRegular.ttf');
+  src: url("./fonts/RavenouslyDemoRegular.ttf");
 }
 
 @font-face {
   font-family: rustic;
-  src: url('./fonts/TheRustic-Demo.ttf');
+  src: url("./fonts/TheRustic-Demo.ttf");
+}
+
+.socialLinks {
+  width: 40px;
+  height: 40px;
+  object-fit: scale-down;
+  margin: 5px;
+  padding: 0px;
+  /* filter: invert(37%) sepia(8%) saturate(7426%) hue-rotate(329deg)
+    brightness(84%) contrast(89%); */
+  filter: invert(92%) sepia(92%) saturate(41%) hue-rotate(206deg)
+    brightness(114%) contrast(92%);
 }
 
 .App {
   display: grid;
-  grid-template-rows: 1fr 0.1fr auto;
-  text-align: center;
-  background-color: #374550;
-  font-family: 'raven';
-  height: 100vh;
-}
-
-.break {
-  background-color: #90a2ab;
+  grid-template-rows: 0.8fr 1.5fr 4fr 4fr;
 }
 
 .App-header {
+  background-image: url("./images/Autumn.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   text-align: center;
-  justify-content: space-between;
-  background-color: #bcac85;
-  color: #8e3829;
-  font-size: 280%;
+  color: whitesmoke;
+  font-size: 250%;
   font-weight: bold;
-  padding: 5px;
+  font-family: raven;
+  padding: 10px;
 }
 
-.Body {
-  display: grid;
-  text-align: center;
-  padding: 5px;
-  margin: 10px;
-  color: #8e8d8a;
-  /* background-image: url('./images/Autumn.jpg');
-  background-size: 100%; */
-}
-
-.header {
-  text-align: start;
+.photo-quicklinks {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color: #374550;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: raven;
 }
 
 .photo {
-  display: flex;
-  justify-self: center;
   border-radius: 50%;
-  width: 100px;
+  width: 104px;
   height: 150px;
   object-fit: scale-down;
   opacity: 1;
   border: 4px #90a2ab solid;
 }
 
-.background {
-  grid-column: 2/2;
-  grid-row: 1/1;
-  /* height: 150px; */
-  width: 800px;
-  object-fit: cover;
-  object-position: 50% 38%;
-}
-
-.socialLinks {
-  width: 30px;
-  height: 30px;
-  object-fit: scale-down;
-  margin: 5px;
-  filter: invert(23%) sepia(36%) saturate(2426%) hue-rotate(338deg)
-    brightness(94%) contrast(87%);
-}
-
-.aboutMe {
-  font-family: 'raven';
-  font-size: medium;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  line-height: 130%;
-  background-color: #f2f0f0;
-  color: #8e8d8a;
-  border-radius: 6px;
-  padding: 4px;
-}
-
-.My-Work {
-  text-align: center;
-}
-
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 720px) {
   .App {
-    display: grid;
-    grid-template-rows: 90px 10px auto;
-    height: 100vh;
+    grid-template-rows: 1.5fr 2fr 4fr 4fr;
   }
-
   .App-header {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    font-size: 450%;
   }
-
-  .Body {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto 5fr;
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
+  .socialLinks {
+    width: 50px;
+    height: 50px;
   }
-
-  .aboutMe {
-    text-align: left;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    border-radius: 6px;
-    padding: 4px;
+  .photo-quicklinks {
+    flex-direction: row;
+  }
+  .work {
+    background: black;
+  }
+  .work:hover {
+    background-image: url("./images/Autumn.jpg");
   }
 }
