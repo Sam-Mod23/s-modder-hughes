@@ -9,13 +9,15 @@ import { Link } from "react-scroll";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <PhotoQuicklinks />
+      <header className="header">
+        <Header />
+        <PhotoQuicklinks />
+      </header>
+
       <AboutMe />
       <Projects />
       <Soundtrack />
       <div>
-        {" "}
         <Link
           to="app-header"
           spy={true}

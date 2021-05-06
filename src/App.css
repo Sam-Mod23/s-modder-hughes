@@ -13,11 +13,21 @@
 
 .App {
   display: grid;
-  grid-template-rows: 0.8fr 1.5fr 4fr 4fr 4fr;
+  grid-template-rows: 2fr 4fr 4fr 4fr;
+  font-family: raven;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./images/Autumn.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .App-header {
-  background-image: url("./images/Autumn.jpg");
+  /* background-image: url("./images/Autumn.jpg"); */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -28,8 +38,9 @@
   color: whitesmoke;
   font-size: 250%;
   font-weight: bold;
-  font-family: raven;
   padding: 10px;
+  text-shadow: -1px -1px 0 #29180a, 1px -1px 0 #29180a, -1px 1px 0 #29180a,
+    1px 1px 0 #29180a;
 }
 
 .socialLinks {
@@ -40,6 +51,12 @@
   padding: 0px;
   filter: invert(92%) sepia(92%) saturate(41%) hue-rotate(206deg)
     brightness(114%) contrast(92%);
+  text-shadow: -1px -1px 0 #29180a, 1px -1px 0 #29180a, -1px 1px 0 #29180a,
+    1px 1px 0 #29180a;
+}
+
+.socialLinks:hover {
+  box-shadow: -1px 1px 1px 1px white;
 }
 
 .toTop {
@@ -52,10 +69,17 @@
   cursor: pointer;
 }
 
+.aboutMe {
+  padding: 20px;
+  text-align: center;
+  font-size: x-large;
+  background-color: #886338;
+}
+
 /* Desktop */
 @media only screen and (min-width: 720px) {
   .App {
-    grid-template-rows: 2.5fr 2fr 4fr 4fr 4fr;
+    grid-template-rows: 2fr 3fr 3fr 3fr;
   }
   /* Header */
   .App-header {

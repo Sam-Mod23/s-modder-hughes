@@ -4,17 +4,21 @@
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  background-color: #374550;
+  /* background-color: #b0ab9e; */
+  margin: 1rem;
   color: whitesmoke;
-  font-size: 15px;
+
+  font-size: x-large;
   font-weight: bold;
   font-family: raven;
+  text-shadow: -1px -1px 0 #29180a, 1px -1px 0 #29180a, -1px 1px 0 #29180a,
+    1px 1px 0 #29180a;
 }
 
 .photo {
   border-radius: 50%;
-  width: 104px;
-  height: 150px;
+  width: 145px;
+  height: 209px;
   object-fit: scale-down;
   opacity: 1;
   border: 4px #90a2ab solid;
@@ -65,22 +69,22 @@
     font-size: 20px;
   }
   .work {
-    padding: 3rem;
+    padding: 5rem;
     margin: 1rem;
-    height: 200px;
+    height: 209px;
   }
   .work:hover {
-    color: #29180a;
+    border-radius: 40px;
     background-size: cover;
     background-image: url("https://images.pexels.com/photos/374016/pexels-photo-374016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   }
   .soundtrack {
-    padding: 3rem;
+    padding: 50px;
     margin: 1rem;
-    height: 200px;
+    height: 209px;
   }
   .soundtrack:hover {
-    color: #29180a;
+    border-radius: 40px;
     background-size: cover;
     background-image: url("../images/soundtrack-clear.jpg");
   }
