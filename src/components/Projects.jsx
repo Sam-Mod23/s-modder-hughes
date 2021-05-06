@@ -1,9 +1,8 @@
 import React from "react";
 import { Element } from "react-scroll";
-
-import blurble from "../images/blurble.jpg";
 import NCNewsBE from "./Project-Cards/NC-News-BE";
 import NCNewsFE from "./Project-Cards/NC-News-FE";
+import Blurble from "./Project-Cards/Blurble";
 
 const Projects = () => {
   return (
@@ -21,18 +20,12 @@ const Projects = () => {
       <section className="project-collection">
         <NCNewsBE />
         <NCNewsFE />
-        <div
-          href="#"
-          className="project-card"
-          style={{ backgroundImage: `url(${blurble})` }}
-        >
-          <h2 className="project-card-header">Blurble</h2>
-        </div>
+        <Blurble />
       </section>
       <body className="project-summary">
         All of these projects were completed following agile practices,
         including pair programming and test driven development. Blurble was ran
-        as a 5 member project, with a phase for research, wireframe designs and
+        as a 5 member project, with a research phase, wireframe designs and
         daily morning stand-ups throughout.
       </body>
     </Element>

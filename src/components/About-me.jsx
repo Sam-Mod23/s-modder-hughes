@@ -9,7 +9,7 @@ const AboutMe = () => {
             color: "#8E3829",
             padding: "0px 0px",
             margin: "4px 0px",
-            "text-align": "left"
+            "text-align": "center"
           }}
         >
           About me

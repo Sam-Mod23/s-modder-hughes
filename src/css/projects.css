@@ -5,7 +5,7 @@
 .project-collection {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  list-style: none;
 }
 
 .project-card {
@@ -14,7 +14,7 @@
   align-items: center;
   flex: 1 1 0px;
   color: whitesmoke;
-  height: 300px;
+  height: auto;
   width: auto;
   background-size: cover;
   background-position: center;
@@ -29,10 +29,12 @@
 
 .project-card-header {
   position: relative;
+  margin: 5px;
 }
 
 .project-card-text {
-  font-size: medium;
+  margin: 10px;
+  font-size: large;
   visibility: visible;
   position: relative;
 }
@@ -70,7 +72,7 @@
   }
 
   .project-card-text {
-    font-size: larger;
+    font-size: large;
     visibility: hidden;
     position: relative;
   }
@@ -87,8 +89,8 @@
     position: absolute;
     background-color: ;
   } */
-  .project-card:hover .greyed {
+  /* .project-card:hover .greyed {
     visibility: visible;
     opacity: 60%;
-  }
+  } */
 }
