@@ -22,12 +22,12 @@ const Projects = () => {
         <NCNewsFE />
         <Blurble />
       </section>
-      <body className="project-summary">
+      <section className="project-summary">
         All of these projects were completed following agile practices,
         including pair programming and test driven development. Blurble was ran
         as a 5 member project, with a research phase, planning phase with
         wireframe designs and daily morning stand-ups throughout.
-      </body>
+      </section>
     </Element>
   );
 };

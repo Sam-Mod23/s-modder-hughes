@@ -14,7 +14,7 @@ const Soundtrack = () => {
       >
         And now for something completely different...
       </h2>
-      <body>
+      <section>
         <p>
           Back in the ye-olde year of 2015, two friends came to me on a muggy
           Saturday morning after a late previous night. They asked me to get
@@ -38,7 +38,7 @@ const Soundtrack = () => {
           Unfortunately, there are no re-releases planned. So you’ll have to
           enjoy it on the screen you’re currently using. Hello Jason Issacs!{" "}
         </p>
-      </body>
+      </section>
       <iframe
         className="WDUSoundtrack"
         title="WDUSoundtrack"

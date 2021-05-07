@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 const AboutMe = () => {
   return (
     <Element id="aboutMe" name="aboutMe" className="aboutMe">
-      <body>
+      <section>
         <h2
           style={{
             color: "#8E3829",
@@ -47,7 +47,7 @@ const AboutMe = () => {
           made me realise how much I have missed learning something new. I can’t
           wait for this to continue.
         </p>
-      </body>
+      </section>
     </Element>
   );
 };
