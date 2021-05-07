@@ -5,7 +5,7 @@ const PhotoQuicklinks = () => {
   return (
     <section className="photo-quicklinks">
       <img className="photo" alt="Sam M-H" src={photo}></img>
-      <div>
+      <div className="quicklinks">
         <Link
           to="projects"
           spy={true}

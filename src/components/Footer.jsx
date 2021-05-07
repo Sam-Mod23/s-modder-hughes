@@ -1,12 +1,11 @@
-import React from "react";
+import { Link } from "react-scroll";
 import linked from "../images/LI-In-Bug.png";
 import github from "../images/GitHub-Mark-64px.png";
 import email from "../images/email3.png";
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header id="app-header" className="App-header">
-      Sam Modder-Hughes
+    <footer id="app-footer" className="App-footer">
       <div>
         <a href="https://www.linkedin.com/in/sam-modder-hughes/">
           <img className="socialLinks" alt="LinkedIn logo" src={linked}></img>
@@ -18,8 +17,18 @@ const Header = () => {
           <img className="socialLinks" alt="email logo" src={email}></img>
         </a>
       </div>
-    </header>
+      <Link
+        to="app-header"
+        spy={true}
+        smooth={true}
+        duration={500}
+        className="toTop"
+      >
+        Back to the top...
+      </Link>
+      <p>© Copyright Sam Modder-Hughes 2021. All rights reserved.</p>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;

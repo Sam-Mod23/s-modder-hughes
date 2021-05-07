@@ -14,21 +14,27 @@ const Blurble = () => {
         which technologies, platforms and packages to use. I worked primarily on
         the backend, exploring a completely unfamiliar database package in
         MongoDB and implementing it from the ground up.
-        <p>Javascript ✦ PSQL ✦ Express ✦ Supertest</p>
+        <p>Javascript ✦ MongoDB ✦ Mongoose ✦ Express ✦ Jest ✦ Supertest</p>
         <p>
           <a
-            href="https://github.com/Sam-Mod23/be-nc-news"
+            href="https://github.com/Sam-Mod23/Blurble-Backend"
             className="project-links"
           >
-            Github repo
+            Backend repo
           </a>
           <span>
             {" | "}
             <a
-              href="https://be-nc-news-sjmh.herokuapp.com/api"
+              href="https://blurble-project.herokuapp.com/api"
               className="project-links"
             >
               Heroku app
+            </a>
+          </span>
+          <span>
+            {" | "}
+            <a href="#" className="project-links">
+              Demo and full presentation incoming!
             </a>
           </span>
         </p>

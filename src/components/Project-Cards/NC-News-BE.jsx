@@ -9,8 +9,8 @@ const NCNewsBE = () => {
     >
       <h2 className="project-card-header">NC-News Backend</h2>
       <p className="project-card-text">
-        Reddit style Api built using MVC and TDD methods, interacting with a
-        PSQL database.
+        Reddit style RESTful Api built using MVC and TDD methods, interacting
+        with a PSQL database.
         <p>Javascript ✦ PSQL ✦ Express ✦ Supertest</p>
         <p>
           <a

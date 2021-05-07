@@ -15,7 +15,7 @@ const AboutMe = () => {
           About me
         </h2>
         Hi, I’m Sam! I’m a Physics graduate, turned banking contractor, turned
-        software developer currently working through a 14 week bootcamp at
+        software developer having just graduated a 14 week bootcamp at
         Northcoders!
         <p>
           After realising that my life as a Physicist was less globetrotting
@@ -26,10 +26,11 @@ const AboutMe = () => {
         </p>
         <p>
           I’ve always been interested in tech and development from a user
-          perspective and what I’ve loved about this course is how accessible it
-          has made the once elusive areas of tech. The fact that in week 4 we
+          perspective and what I loved about the course is how accessible it has
+          made the once elusive areas of tech. The fact that in week 4 we
           developed a (admittedly rudimentary) Pokemon game completely opened up
-          my perspective on the whole industry.
+          my perspective on the whole industry. Side note - my pokedex only had
+          the original 150 pokemon! I'm a purist.
         </p>{" "}
         <p>
           In case it wasn’t already apparent, and completely against

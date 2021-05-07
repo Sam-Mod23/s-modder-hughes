@@ -1,5 +1,7 @@
 .projects {
   background-color: #b0ab9e;
+  color: whitesmoke;
+  padding: 10px;
 }
 
 .project-collection {
@@ -19,7 +21,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-  border: 1px solid transparent;
+  border: 1px solid #90a2ab;
   margin: 5px;
   text-align: center;
   font-weight: bolder;
@@ -40,16 +42,15 @@
 }
 
 .project-links {
-  text-decoration: none;
   color: whitesmoke;
-
+  text-decoration: underline;
   font-style: italic;
   padding: 2px;
 }
 
 .project-links:hover {
   cursor: pointer;
-  color: #58445c;
+  background-color: #b3a4b6;
 }
 /* .greyed {
   visibility: hidden;
@@ -62,7 +63,7 @@
   font-size: x-large;
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 900px) {
   .project-collection {
     flex-direction: row;
   }

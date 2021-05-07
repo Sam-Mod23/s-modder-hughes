@@ -16,6 +16,12 @@ const NCNewsFE = () => {
           >
             Github repo
           </a>
+          <span>
+            {" | "}
+            <a href="#" className="project-links">
+              Hosted site incoming!
+            </a>
+          </span>
         </p>
       </p>
     </div>

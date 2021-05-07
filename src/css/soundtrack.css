@@ -1,0 +1,26 @@
+.soundtrack-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #886338;
+  /* background-color: #b0ab9e; */
+  text-align: center;
+  padding: 10px;
+  color: whitesmoke;
+}
+
+.WDUSoundtrack {
+  width: 90vw;
+  height: 610px;
+}
+
+@media only screen and (min-width: 900px) {
+  .WDUSoundtrack {
+    width: 800px;
+    height: 650px;
+  }
+
+  .soundtrack-block {
+    font-size: x-large;
+  }
+}

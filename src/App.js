@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Soundtrack from "./components/Soundtrack";
 import PhotoQuicklinks from "./components/Photo-quicklinks";
-import { Link } from "react-scroll";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,22 +13,10 @@ function App() {
         <Header />
         <PhotoQuicklinks />
       </header>
-
       <AboutMe />
       <Projects />
       <Soundtrack />
-      <div>
-        <Link
-          to="app-header"
-          spy={true}
-          smooth={true}
-          duration={500}
-          className="toTop"
-          style={{ color: "black" }}
-        >
-          Back to the top...
-        </Link>
-      </div>
+      <Footer />
     </div>
   );
 }
