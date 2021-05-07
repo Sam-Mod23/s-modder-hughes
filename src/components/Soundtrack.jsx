@@ -29,9 +29,9 @@ const Soundtrack = () => {
             Well Done U competition for BBC 5 Live’s Kermode and Mayo Film
             Review.
           </a>{" "}
-          With my fellow cast and crew, we watched as the film was played in
-          Leicester Square Odeon on the biggest screen I’ve ever seen, during a
-          live broadcast of the 5 live show.{" "}
+          With my fellow cast and crew (all 4 of us), we watched as the film was
+          played in Leicester Square Odeon on the biggest screen I’ve ever seen,
+          during a live broadcast of the 5 live show.{" "}
         </p>
 
         <p>
