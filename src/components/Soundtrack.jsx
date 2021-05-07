@@ -25,7 +25,10 @@ const Soundtrack = () => {
 
         <p>
           Cut to 4 months later and our wee short film had won the{" "}
-          <a href="https://www.bbc.co.uk/programmes/articles/cfrxVG5J3K6g68ksjpmS50/soundtrack-is-music-to-the-ears-of-well-done-u-judges">
+          <a
+            target="_blank"
+            href="https://www.bbc.co.uk/programmes/articles/cfrxVG5J3K6g68ksjpmS50/soundtrack-is-music-to-the-ears-of-well-done-u-judges"
+          >
             Well Done U competition for BBC 5 Live’s Kermode and Mayo Film
             Review.
           </a>{" "}

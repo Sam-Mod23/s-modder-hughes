@@ -14,6 +14,7 @@ const NCNewsBE = () => {
         <p>Javascript ✦ PSQL ✦ Express ✦ Supertest</p>
         <p>
           <a
+            target="_blank"
             href="https://github.com/Sam-Mod23/be-nc-news"
             className="project-links"
           >
@@ -22,6 +23,7 @@ const NCNewsBE = () => {
           <span>
             {" | "}
             <a
+              target="_blank"
               href="https://be-nc-news-sjmh.herokuapp.com/api"
               className="project-links"
             >

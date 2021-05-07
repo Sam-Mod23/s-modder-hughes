@@ -17,6 +17,7 @@ const Blurble = () => {
         <p>Javascript ✦ MongoDB ✦ Mongoose ✦ Express ✦ Jest ✦ Supertest</p>
         <p>
           <a
+            target="_blank"
             href="https://github.com/Sam-Mod23/Blurble-Backend"
             className="project-links"
           >
@@ -25,6 +26,7 @@ const Blurble = () => {
           <span>
             {" | "}
             <a
+              target="_blank"
               href="https://blurble-project.herokuapp.com/api"
               className="project-links"
             >
@@ -33,7 +35,7 @@ const Blurble = () => {
           </span>
           <span>
             {" | "}
-            <a href="#" className="project-links">
+            <a target="_blank" href="#" className="project-links">
               Demo and full presentation incoming!
             </a>
           </span>

@@ -11,6 +11,7 @@ const NCNewsFE = () => {
         <p>React ✦ Javascript ✦ HTML ✦ CSS</p>
         <p>
           <a
+            target="_blank"
             href="https://github.com/Sam-Mod23/nc-news-react-app"
             className="project-links"
           >
@@ -18,7 +19,7 @@ const NCNewsFE = () => {
           </a>
           <span>
             {" | "}
-            <a href="#" className="project-links">
+            <a target="_blank" href="#" className="project-links">
               Hosted site incoming!
             </a>
           </span>
