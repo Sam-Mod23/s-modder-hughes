@@ -1,3 +1,7 @@
+@import "./css/photo-quicklinks.css";
+@import "./css/projects.css";
+@import "./css/soundtrack.css";
+
 @font-face {
   font-family: raven;
   src: url("./fonts/RavenouslyDemoRegular.ttf");
@@ -10,112 +14,93 @@
 
 .App {
   display: grid;
-  grid-template-rows: 1fr 10px auto;
-  text-align: center;
-  background-color: #374550;
-  font-family: "raven";
-  height: 100vh;
-}
-
-.break {
-  background-color: #90a2ab;
-}
-
-.App-header {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-between;
-  background-color: #bcac85;
-  color: #8e3829;
-  font-size: 280%;
-  font-weight: bold;
-  padding: 5px;
-}
-
-.Body {
-  display: grid;
-  text-align: center;
-  padding: 5px;
-  margin: 10px;
-  color: #8e8d8a;
-  height: 150vh;
-  /* background-image: url('./images/Autumn.jpg');
-  background-size: 100%; */
+  grid-template-rows: 0.4fr 1fr 0.5fr 0.5fr 0.05fr;
+  font-family: raven;
 }
 
 .header {
-  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("./images/Autumn.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.photo {
+.App-header {
+  /* background-image: url("./images/Autumn.jpg"); */
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-self: center;
-  border-radius: 50%;
-  width: 100px;
-  height: 150px;
-  object-fit: scale-down;
-  opacity: 1;
-  border: 4px #90a2ab solid;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 250%;
+  font-weight: bold;
+  padding: 10px;
+  text-shadow: -1px -1px 0 #29180a, 1px -1px 0 #29180a, -1px 1px 0 #29180a,
+    1px 1px 0 #29180a;
 }
 
 .socialLinks {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   object-fit: scale-down;
   margin: 5px;
-  filter: invert(23%) sepia(36%) saturate(2426%) hue-rotate(338deg)
-    brightness(94%) contrast(87%);
+  padding: 2px;
+  filter: invert(92%) sepia(92%) saturate(41%) hue-rotate(206deg)
+    brightness(114%) contrast(92%);
+  text-shadow: -1px -1px 0 #29180a, 1px -1px 0 #29180a, -1px 1px 0 #29180a,
+    1px 1px 0 #29180a;
 }
 
+.socialLinks:hover {
+  box-shadow: -1px 1px 1px 1px white;
+}
 .aboutMe {
-  font-family: "raven";
-  font-size: medium;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  line-height: 130%;
-  background-color: #f2f0f0;
-  color: #8e8d8a;
-  border-radius: 6px;
-  padding: 4px;
-}
-
-.My-Work {
+  padding: 20px;
   text-align: center;
+  font-size: x-large;
+  background-color: #886338;
+  border: 2px #90a2ab solid;
+  color: whitesmoke;
 }
 
-@media only screen and (min-width: 700px) {
+.App-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #29180a;
+  color: whitesmoke;
+}
+.toTop {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+.toTop:hover {
+  cursor: pointer;
+}
+
+/* Desktop */
+@media only screen and (min-width: 900px) {
   .App {
-    display: grid;
-    grid-template-rows: 90px 10px auto;
-    height: 90vh;
-  }
 
+    /* grid-template-rows: 1.2fr 1fr 1fr 2fr 0.2fr; */
+    grid-template-rows: 0.4fr 0.7fr 0.7fr 0.8fr 0.05fr;
+
+  }
+  /* Header */
   .App-header {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    font-size: 450%;
   }
-
-  .Body {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto 5fr;
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
-    height: 100vh;
-  }
-
-  .aboutMe {
-    text-align: left;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    border-radius: 6px;
-    padding: 4px;
+  .socialLinks {
+    width: 50px;
+    height: 50px;
   }
 
   .background {

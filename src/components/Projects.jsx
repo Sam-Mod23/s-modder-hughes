@@ -1,21 +1,34 @@
-import React from 'react';
-import Autumn from '../images/Autumn.jpg';
+import React from "react";
+import { Element } from "react-scroll";
+import NCNewsBE from "./Project-Cards/NC-News-BE";
+import NCNewsFE from "./Project-Cards/NC-News-FE";
+import Blurble from "./Project-Cards/Blurble";
 
 const Projects = () => {
   return (
-    <div>
-      {/* <img className='background' alt='autumn' src={Autumn}></img> */}
-      <header
+    <Element id="projects" name="projects" className="projects">
+      <h1
         style={{
-          color: '#8E3829',
-          padding: '0px 0px',
-          margin: '4px 0px',
-          'text-align': 'center'
+          color: "#8E3829",
+          padding: "0px 0px",
+          margin: "4px 0px",
+          "text-align": "center"
         }}
       >
-        Some of my work
-      </header>
-    </div>
+        Projects
+      </h1>
+      <section className="project-collection">
+        <NCNewsBE />
+        <NCNewsFE />
+        <Blurble />
+      </section>
+      <body className="project-summary">
+        All of these projects were completed following agile practices,
+        including pair programming and test driven development. Blurble was ran
+        as a 5 member project, with a research phase, planning phase with
+        wireframe designs and daily morning stand-ups throughout.
+      </body>
+    </Element>
   );
 };
 

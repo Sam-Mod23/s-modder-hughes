@@ -1,21 +1,23 @@
 import "./App.css";
-import AboutMe from "./text/About-me.jsx";
+
+import AboutMe from "./components/About-me.jsx";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
-import Logo from "./images/Logo.png";
-import Autumn from "./images/Autumn.jpg";
+import Soundtrack from "./components/Soundtrack";
+import PhotoQuicklinks from "./components/Photo-quicklinks";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <section className="break"></section>
-      <body className="Body">
-        <img className="photo" alt="Sam M-H" src={Logo}></img>
-        <AboutMe className="aboutMe" />
-        <img className="background" alt="autumn" src={Autumn}></img>
-        <Projects />
-      </body>
+      <header className="header">
+        <Header />
+        <PhotoQuicklinks />
+      </header>
+      <AboutMe />
+      <Projects />
+      <Soundtrack />
+      <Footer />
     </div>
   );
 }
