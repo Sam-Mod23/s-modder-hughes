@@ -88,10 +88,8 @@
 /* Desktop */
 @media only screen and (min-width: 900px) {
   .App {
-
     /* grid-template-rows: 1.2fr 1fr 1fr 2fr 0.2fr; */
     grid-template-rows: 0.4fr 0.7fr 0.7fr 0.8fr 0.05fr;
-
   }
   /* Header */
   .App-header {

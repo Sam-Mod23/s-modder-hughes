@@ -52,6 +52,25 @@
   cursor: pointer;
   background-color: #b3a4b6;
 }
+
+.demo-button {
+  background: none;
+  color: whitesmoke;
+  text-decoration: underline;
+  font-style: italic;
+  padding: 2px;
+  font-size: "large";
+  font-family: raven;
+  font-weight: bolder;
+  border: none;
+  text-shadow: -1px -1px 0 #29180a, 1px -1px 0 #29180a, -1px 1px 0 #29180a,
+    1px 1px 0 #29180a;
+}
+
+.demo-button:hover {
+  cursor: pointer;
+  background-color: #b3a4b6;
+}
 /* .greyed {
   visibility: hidden;
   border-radius: 20px;
