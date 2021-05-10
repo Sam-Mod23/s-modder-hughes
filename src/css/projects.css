@@ -2,6 +2,7 @@
   background-color: #b0ab9e;
   color: whitesmoke;
   padding: 10px;
+  height: 100%;
 }
 
 .project-collection {
@@ -51,6 +52,7 @@
 .project-links:hover {
   cursor: pointer;
   background-color: #b3a4b6;
+  border-radius: 5px;
 }
 
 .demo-button {
@@ -59,7 +61,7 @@
   text-decoration: underline;
   font-style: italic;
   padding: 2px;
-  font-size: "large";
+  font-size: unset;
   font-family: raven;
   font-weight: bolder;
   border: none;
@@ -70,11 +72,39 @@
 .demo-button:hover {
   cursor: pointer;
   background-color: #b3a4b6;
+  border-radius: 5px;
 }
-/* .greyed {
-  visibility: hidden;
-  border-radius: 20px;
-} */
+.demoPop {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 5px;
+}
+
+.demoPop-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #886338;
+  position: absolute;
+  padding: 2px;
+}
+
+.demo-vid {
+  width: 90vw;
+  height: 610px;
+}
+
+.demo-close {
+  color: "black";
+  font-size: "larger";
+}
+
+.demo-close:hover {
+  cursor: pointer;
+}
 
 .project-summary {
   padding: 40px;
@@ -92,7 +122,6 @@
   }
 
   .project-card-text {
-    font-size: large;
     visibility: hidden;
     position: relative;
   }
@@ -104,13 +133,20 @@
     visibility: visible;
   }
   /* .greyed {
-    height: 300px;
-    width: initial;
+    visibility: hidden;
+    height: auto;
+    width: 32%;
     position: absolute;
-    background-color: ;
-  } */
-  /* .project-card:hover .greyed {
+    background-color: grey;
+    border-radius: 20px;
+  }
+  .project-card:hover .greyed {
     visibility: visible;
     opacity: 60%;
   } */
+
+  .project-card:hover {
+    transition-duration: 0.5s;
+    background-image: url("../images/project-card-background.jpeg") !important;
+  }
 }
