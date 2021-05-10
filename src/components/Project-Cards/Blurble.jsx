@@ -1,26 +1,14 @@
+import React, { Component } from "react";
 import blurble from "../../images/blurble.jpg";
 
-import React, { Component } from "react";
-
 export default class Blurble extends Component {
-  state = {
-    demoPop: false
-  };
-
-  togglePop = () => {
-    this.setState({
-      demoPop: !this.state.demoPop
-    });
-  };
-
   render() {
     return (
       <div
-        rel="noreferrer"
-        href="#"
         className="project-card"
         style={{ backgroundImage: `url(${blurble})` }}
       >
+        {/* <div className="greyed"></div> */}
         <h2 className="project-card-header">Blurble</h2>
         <p className="project-card-text">
           A book-club app for friends. Built using MongoDB and React Native.
@@ -51,7 +39,7 @@ export default class Blurble extends Component {
             </span>
             <span>
               {" | "}
-              <button onClick={this.togglePop} className="demo-button">
+              <button onClick={this.props.togglePop} className="demo-button">
                 Demo
               </button>
             </span>
