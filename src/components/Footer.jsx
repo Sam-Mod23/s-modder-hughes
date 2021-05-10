@@ -8,15 +8,20 @@ const Footer = () => {
     <footer id="app-footer" className="App-footer">
       <div>
         <a
+          rel="noreferrer"
           target="_blank"
           href="https://www.linkedin.com/in/sam-modder-hughes/"
         >
           <img className="socialLinks" alt="LinkedIn logo" src={linked}></img>
         </a>
-        <a target="_blank" href="https://github.com/Sam-Mod23">
+        <a rel="noreferrer" target="_blank" href="https://github.com/Sam-Mod23">
           <img className="socialLinks" alt="gitHub logo" src={github}></img>
         </a>
-        <a target="_blank" href="mailto:sj.modderhughes@gmail.com">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="mailto:sj.modderhughes@gmail.com"
+        >
           <img className="socialLinks" alt="email logo" src={email}></img>
         </a>
       </div>

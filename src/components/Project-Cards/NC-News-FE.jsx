@@ -11,6 +11,7 @@ const NCNewsFE = () => {
         <p>React ✦ Javascript ✦ HTML ✦ CSS</p>
         <p>
           <a
+            rel="noreferrer"
             target="_blank"
             href="https://github.com/Sam-Mod23/nc-news-react-app"
             className="project-links"
