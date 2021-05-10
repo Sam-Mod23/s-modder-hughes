@@ -14,11 +14,11 @@ const Soundtrack = () => {
       >
         And now for something completely different...
       </h2>
-      <section>
+      <section style={{ fontSize: "x-large" }}>
         <p>
           Back in the ye-olde year of 2015, two friends came to me on a muggy
           Saturday morning after a late previous night. They asked me to get
-          into my dullest suit, and run around the city followed by a camera,
+          into my dullest suit and run around the city followed by a camera,
           making sure to change ties every 30 seconds. There was a keyboard in
           there somewhere as well, I’m sure.{" "}
         </p>
